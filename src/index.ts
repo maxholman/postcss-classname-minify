@@ -1,6 +1,6 @@
-import * as postcss from 'postcss';
-import * as parser from 'postcss-selector-parser';
-import * as baseX from 'base-x';
+import postcss from 'postcss';
+import parser from 'postcss-selector-parser';
+import baseX from 'base-x';
 
 interface PluginOpts {
   alphabet: string;
@@ -12,7 +12,7 @@ const defaultOptions: PluginOpts = {
 
 const name = 'postcss-classname-minify';
 
-export default postcss.plugin(name, (opts: Partial<PluginOpts> = {}) => {
+export = postcss.plugin(name, (opts: Partial<PluginOpts> = {}) => {
   const { alphabet } = {
     ...defaultOptions,
     ...opts,

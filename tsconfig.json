@@ -4,9 +4,10 @@
     "outDir": "./dist",
     "module": "commonjs",
     "lib": ["es2019"],
-    "target": "es2016",
+    "target": "es6",
     "removeComments": true,
-    "declaration": true
+    "declaration": true,
+    "esModuleInterop": true
   },
   "include": [
     "src"

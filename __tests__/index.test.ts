@@ -1,4 +1,4 @@
-import * as postcss from 'postcss';
+import postcss from 'postcss';
 import plugin from '../src/index';
 
 async function run(input, output, opts): Promise<void> {
