@@ -13,7 +13,9 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "build:clean": "rimraf dist/*",
     "build:watch": "tsc -w",
+    "prepare": "yarn build:clean && yarn test && yarn build",
     "test": "jest"
   },
   "dependencies": {
@@ -26,10 +28,12 @@
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
     "eslint": "^6.8.0",
-    "eslint-config-postcss": "^3.0.7",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "jest": "^25.1.0",
     "postcss": "^7.0.26",
     "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
     "ts-jest": "^25.2.0",
     "typescript": "^3.7.5"
   },
