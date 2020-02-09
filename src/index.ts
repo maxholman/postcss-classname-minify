@@ -14,8 +14,8 @@ const name = 'postcss-classname-minify';
 
 export default postcss.plugin(name, (opts: Partial<PluginOpts> = {}) => {
   const { alphabet } = {
-    ...opts,
     ...defaultOptions,
+    ...opts,
   };
 
   const base = baseX(alphabet);
