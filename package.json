@@ -1,0 +1,38 @@
+{
+  "name": "postcss-classname-minify",
+  "version": "0.1.0",
+  "description": "PostCSS plugin to shorten class names",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin"
+  ],
+  "repository": "maxholman/postcss-plugin-class-shorten",
+  "license": "MIT",
+  "author": "Max Holman <max@holmn.com>",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "base-x": "^3.0.7",
+    "postcss": "^7.0.26",
+    "postcss-selector-parser": "^6.0.2"
+  },
+  "devDependencies": {
+    "@colacube/eslint-config": "^1.0.7",
+    "@types/base-x": "^3.0.6",
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-postcss": "^3.0.7",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.5"
+  },
+  "engines": {
+    "node": ">=13.0.0"
+  }
+}
